@@ -1,6 +1,6 @@
 alias ll='eza --group-directories-first --icons -la'
+alias ls='eza --group-directories-first'
 alias l=ll
-alias ls='eza --group-directories-first --icons'
 alias mv='mv -i'
 alias cp='cp -i'
 alias ln='ln -i'

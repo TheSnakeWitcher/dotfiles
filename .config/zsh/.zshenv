@@ -59,6 +59,7 @@ export SYNC=$SCRIPT/sync
 export GH_HOST=github.com
 export GH_USER=TheSnakeWitcher
 export GH_EDITOR=$EDITOR
+export GH_DOWNLOAD="https://raw.githubusercontent.com"
 
 
 #####################################################################
