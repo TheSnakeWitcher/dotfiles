@@ -1,0 +1,25 @@
+getsite () {
+  wget -mpEk $1
+  #  shortFlag:--longFlag     description
+  #  E: --adjust extensions   save HTML/CSS documents with proper extensions
+  #  k: --convert-links       make links in download files point to local files
+  #  p: --page-requisites     get all assets(images,etc)
+  #  m: --mirror              same as -N -r -l
+  # -N: --timestamping        don't re-retrieve files unless newer than local
+  # -r: --recursive           specify recursive download
+  # -l: --level
+}
+
+debinstall() {
+  ar x  data.tar.xz
+  mkdir /tmp/_dir
+  tar -C /tmp/_dir -xf data.tar.xz
+  sudo rsync /tmp/_dir /
+  rm -f data.tar.xz
+  rm -rf /tmp/_dir
+}
+
+newpkg() {
+    mkdir $1
+    cp /usr/share/pacman/PKGBUILD.proto $1/PKGBUILD
+}

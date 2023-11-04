@@ -1,0 +1,33 @@
+alias ll='eza --group-directories-first --icons -la'
+alias l=ll
+alias ls='eza --group-directories-first --icons'
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
+alias rm='rm -i'
+alias cat=bat
+alias lsblk='lsblk -fp'
+
+alias nv=nvim
+alias neovide="WINIT_UNIX_BACKEND=x11 neovide"
+#alias neovide="env -u WAYLAND_DISPLAY neovide"
+alias g=git
+alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
+alias dots=config
+alias wiki=wiki-search-html
+alias ff=firefox
+alias lg=lazygit
+alias ld=lazydocker
+alias gh-stats=octofetch
+alias hh="pnpm hardhat"
+alias pomodoro="tomatoshell -f | lolcat"
+
+alias pbcopy="wl-copy — clipboard — input"
+alias pbpaste="wl-paste — clipboard — output"
+
+alias cmatrix="cmatrix —C blue"
+# alias screenshot="slurp | grim ~/Pictures/Screenshots/Screenshots-$(date -I).png"
+
+# alias ssh=sshrc
+# alias gt=convfmt # look quicktype,jyt,
+# alias jc=/bin/jc
