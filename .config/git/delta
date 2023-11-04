@@ -1,0 +1,23 @@
+[delta]
+    line-numbers = true # use line numbers
+    light = false       # set to true if you're in a terminal w/ a light background color (e.g. the default macOS terminal)
+    navigate = true     # use n and N to move between diff sections
+    #side-by-side = true
+    #syntax-theme = Dracula         # see delta --list-syntax-themes
+    plus-style = syntax "#003800"
+    minus-style = syntax "#3f0001"
+    features = decorations
+    #map-styles = bold purple => syntax magenta, bold cyan => syntax blue
+[delta "decorations"]
+    file-style = omit
+    commit-style = raw
+    commit-decoration-style = blue ol
+    hunk-header-decoration-style = blue box ul
+    hunk-header-file-style = yellow
+    hunk-header-line-number-style = yellow
+    hunk-header-style = file line-number syntax#tool = git-delta
+[delta "line-numbers"]
+    line-numbers-left-style = cyan
+    line-numbers-right-style = cyan
+    line-numbers-minus-style = 124
+    line-numbers-plus-style = 28
