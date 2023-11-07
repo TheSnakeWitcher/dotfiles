@@ -1,14 +1,15 @@
 font:
-    size: 10
+    size: 9
     # size: 11.0
     normal: 
         family: Hack
         # family: Monospace
         # family: Source Code Pro
-        # family: Iosevka Term Nerd Font Mono
         # family: Iosevka Term Nerd Font
         # family: Iosevka Nerd Font Mono
         # family: Iosevka Nerd Font
+        # family: Iosevka Term Nerd Font Mono
+        # family: Iosevka Term Nerd
 
 # Doom One Colors 
 colors:
