@@ -61,6 +61,14 @@ export GH_USER=TheSnakeWitcher
 export GH_EDITOR=$EDITOR
 export GH_DOWNLOAD="https://raw.githubusercontent.com"
 
+#####################################################################
+# firefox
+#####################################################################
+export MOZ_ENABLE_WAYLAND=1
+# if [[ $XDG_SESSION_TYPE = "wayland" ]] ; then
+#     export MOZ_ENABLE_WAYLAND=1
+# fi
+
 
 #####################################################################
 # RUST/CARGO
@@ -99,3 +107,10 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
+
+
+#####################################################################
+# telegram
+#####################################################################
+QT_QPA_PLATFORM="wayland"               # KDE wayland
+QT_QPA_PLATFORMTHEME="xdgdesktopportal" # KDE file dialogs 

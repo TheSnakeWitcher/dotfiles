@@ -31,3 +31,6 @@ alias cmatrix="cmatrix —C blue"
 # alias ssh=sshrc
 # alias gt=convfmt # look quicktype,jyt,
 # alias jc=/bin/jc
+
+alias aurctl="ssh aur@aur.archlinux.org"
+
