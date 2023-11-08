@@ -9,7 +9,7 @@ alias cat=bat
 alias lsblk='lsblk -fp'
 
 alias nv=nvim
-alias neovide="WINIT_UNIX_BACKEND=x11 neovide"
+# alias neovide="WINIT_UNIX_BACKEND=x11 neovide"
 #alias neovide="env -u WAYLAND_DISPLAY neovide"
 alias g=git
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
@@ -26,7 +26,6 @@ alias pbcopy="wl-copy — clipboard — input"
 alias pbpaste="wl-paste — clipboard — output"
 
 alias cmatrix="cmatrix —C blue"
-# alias screenshot="slurp | grim ~/Pictures/Screenshots/Screenshots-$(date -I).png"
 
 # alias ssh=sshrc
 # alias gt=convfmt # look quicktype,jyt,

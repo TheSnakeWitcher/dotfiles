@@ -6,8 +6,8 @@ export VISUAL=/bin/neovide
 # export WINDOW_MANAGER=/bin/hyprland
 export FILE_MANAGER="/bin/alacritty -e xplr"
 export BROWSER=/bin/firefox
-export PAGER=/bin/less
 export TERM="xterm-256color"
+export PAGER=/bin/less
 export WALLPAPER=$HOME/Pictures/Wallpaper/space.png
 # export XDG_CURRENT_DESKTOP="Hyprland"
 
@@ -40,17 +40,11 @@ export PATH=$PATH:~/.cargo/bin
 # export DISK=/run/media/$USER/elements
 export KB="~/Knowledgebase"
 export DISK="/run/media/$USER/Elements"
-export REPOSITORY=$DISK/SoftwareCode/System/dotfiles
+export REPOSITORY=$DISK/SoftwareCode/system/dotfiles
 export AURLOCAL=$DISK/Software/aur-local/pkg
 export AUR=ssh://aur@aur.archlinux.org
-export SCRIPT=$DISK/SoftwareCode/System/scripts
+export SCRIPT=$DISK/SoftwareCode/system/scripts
 export SYNC=$SCRIPT/sync
-
-
-#####################################################################
-# GIT
-#####################################################################
-# export GH_TEMPLATE_DIR=github.com
 
 
 #####################################################################
@@ -60,6 +54,7 @@ export GH_HOST=github.com
 export GH_USER=TheSnakeWitcher
 export GH_EDITOR=$EDITOR
 export GH_DOWNLOAD="https://raw.githubusercontent.com"
+
 
 #####################################################################
 # firefox
