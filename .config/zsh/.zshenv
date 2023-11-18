@@ -37,14 +37,13 @@ export PATH=$PATH:~/.cargo/bin
 #####################################################################
 # USER
 #####################################################################
-# export DISK=/run/media/$USER/elements
 export KB="~/Knowledgebase"
 export DISK="/run/media/$USER/Elements"
-export REPOSITORY=$DISK/SoftwareCode/dotfiles
+export DOTFILES=$DISK/SoftwareCode/dotfiles
 export AURLOCAL=$DISK/Software/aur-local/pkg
-export AUR=ssh://aur@aur.archlinux.org
-export SCRIPT=$DISK/SoftwareCode/system/scripts
+export SCRIPTS=$DISK/SoftwareCode/scripts
 export SYNC=$SCRIPT/sync
+export AUR=ssh://aur@aur.archlinux.org
 
 
 #####################################################################
@@ -84,7 +83,7 @@ export FZF_DEFAULT_OPTS='--layout=reverse --multi --extended --preview="bat {}" 
 #####################################################################
 # PASS
 #####################################################################
-export PASSWORD_STORE_DIR=$HOME/.local/share/password-store/
+export PASSWORD_STORE_DIR=$HOME/.local/share/password-store
 export PASSWORD_STORE_ENABLE_EXTENSIONS=true
 
 
@@ -108,4 +107,4 @@ esac
 # telegram
 #####################################################################
 QT_QPA_PLATFORM="wayland"               # KDE wayland
-QT_QPA_PLATFORMTHEME="xdgdesktopportal" # KDE file dialogs 
+# QT_QPA_PLATFORMTHEME="xdgdesktopportal" # KDE file dialogs 
