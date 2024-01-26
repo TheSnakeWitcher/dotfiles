@@ -9,7 +9,7 @@ export BROWSER=/bin/firefox
 export TERM="xterm-256color"
 export PAGER=/bin/less
 export WALLPAPER=$HOME/Pictures/Wallpaper/space.png
-# export XDG_CURRENT_DESKTOP="Hyprland"
+QT_QPA_PLATFORMTHEME="xdgdesktopportal" # KDE file dialogs 
 
 
 #####################################################################
@@ -37,12 +37,12 @@ export PATH=$PATH:~/.cargo/bin
 #####################################################################
 # USER
 #####################################################################
-export KB="~/Knowledgebase"
+export KB="$HOME/Knowledgebase"
 export DISK="/run/media/$USER/Elements"
+export AFRUSMAKUSKAPUS=$DISK/Afrusmakuskapus
+export REPOSITORY=$DISK/Software
 export DOTFILES=$DISK/SoftwareCode/dotfiles
-export AURLOCAL=$DISK/Software/aur-local/pkg
 export SCRIPTS=$DISK/SoftwareCode/scripts
-export SYNC=$SCRIPT/sync
 export AUR=ssh://aur@aur.archlinux.org
 
 
@@ -101,10 +101,3 @@ case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
-
-
-#####################################################################
-# telegram
-#####################################################################
-QT_QPA_PLATFORM="wayland"               # KDE wayland
-# QT_QPA_PLATFORMTHEME="xdgdesktopportal" # KDE file dialogs 
