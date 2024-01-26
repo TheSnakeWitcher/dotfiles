@@ -63,6 +63,9 @@ white = '0xbbc2cf'
 #     white: "#efefef"
 # colors: *doom_dark
 
+[window]
+opacity = 0.7
+blur = true
 
 # Dracula Colors 
 # colors:
