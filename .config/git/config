@@ -23,10 +23,10 @@
 [interactive]
     diffFilter = delta --color-only --features interactive
 [sendemail]
-	smtpServer = smtp.gmail.com
-    smtpServerPort = 587
-    smtpEncryption = tls
-    smtpUser = thesnakewitcher@gmail.com
+	smtpserver = smtp.gmail.com
+    smtpserverport = 587
+    smtpencryption = tls
+    smtpuser = thesnakewitcher@gmail.com
     ; smtpPass = thesnakewitcher@gmail.com
     ; from = thesnakewitcher@gmail.com
     ; suppresscc = self
@@ -41,7 +41,7 @@
 	cim = commit -m
 	cia = commit --amend -m
 	logg = log --oneline --graph --decorate --all
-	lg = log --oneline --graph --decorate --simplify-by-decoration
+	lg = log --oneline --graph --decorate
 	log1 = log -1 --stat
 	log3 = log -3 --stat
 	log5 = log -5 --stat
