@@ -8,7 +8,8 @@
 size = 9
 
 [font.normal] 
-family = "Hack"
+family = "FiraCode Nerd Font"
+# family = "Hack"
 # family: Monospace
 # family: Source Code Pro
 # family: Iosevka Term Nerd Font
