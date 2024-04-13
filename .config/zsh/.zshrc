@@ -47,3 +47,10 @@ eval $(thefuck --alias)
 
 source $ZDOTDIR/.zsh-aliases
 source $ZDOTDIR/.zsh-functions
+
+# pnpm
+export PNPM_HOME="/home/mr-papi/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
