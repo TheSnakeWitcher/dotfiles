@@ -41,7 +41,8 @@
 	cim = commit -m
 	cia = commit --amend -m
 	logg = log --oneline --graph --decorate --all
-	lg = log --oneline --graph --decorate
+	; lg = log 	--format=format:"%H"
+	lg = log --oneline
 	log1 = log -1 --stat
 	log3 = log -3 --stat
 	log5 = log -5 --stat
