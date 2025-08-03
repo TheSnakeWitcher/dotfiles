@@ -3,12 +3,9 @@
 #####################################################################
 export EDITOR=/bin/nvim
 export VISUAL=/bin/neovide
-# export WINDOW_MANAGER=/bin/hyprland
-export FILE_MANAGER="/bin/alacritty -e xplr"
 export BROWSER=/bin/firefox
 export TERM="xterm-256color"
 export PAGER=/bin/less
-export WALLPAPER=$HOME/Pictures/Wallpaper/space.png
 QT_QPA_PLATFORMTHEME="xdgdesktopportal" # KDE file dialogs 
 
 
@@ -18,20 +15,6 @@ QT_QPA_PLATFORMTHEME="xdgdesktopportal" # KDE file dialogs
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/.local/bin/go
 export PATH=$PATH:~/.cargo/bin
-
-
-#####################################################################
-# xdg user dirs
-#####################################################################
-#export XDG_DESKTOP_DIR=$(xdg-user-dir DESKTOP)
-#export XDG_DOWNLOAD_DIR=$(xdg-user-dir DOWNLOAD)
-#export XDG_TEMPLATES_DIR=$(xdg-user-dir TEMPLATES)
-#export XDG_PUBLICSHARE_DIR=$(xdg-user-dir PUBLICSHARE)
-#export XDG_DOCUMENTS_DIR=$(xdg-user-dir DOCUMENTS)
-#export XDG_MUSIC_DIR=$(xdg-user-dir MUSIC)
-#export XDG_PICTURES_DIR=$(xdg-user-dir PICTURES)
-#export XDG_VIDEOS_DIR=$(xdg-user-dir VIDEOS)
-#export XDG_SOFTWARECODE_DIR$(xdg-user-dir SOFTWARECODE)
 
 
 #####################################################################
@@ -59,17 +42,6 @@ export GH_DOWNLOAD="https://raw.githubusercontent.com"
 # firefox
 #####################################################################
 export MOZ_ENABLE_WAYLAND=1
-# if [[ $XDG_SESSION_TYPE = "wayland" ]] ; then
-#     export MOZ_ENABLE_WAYLAND=1
-# fi
-
-
-#####################################################################
-# RUST/CARGO
-#####################################################################
-# export RUSTC_WRAPPER=sccache cargo build
-# CARGO_HOME
-# CARGO_TARGET_DIR
 
 
 #####################################################################
@@ -77,7 +49,6 @@ export MOZ_ENABLE_WAYLAND=1
 #####################################################################
 export FZF_DEFAULT_COMMAND=fd
 export FZF_DEFAULT_OPTS='--layout=reverse --multi --extended --preview="bat {}" --cycle'
-#export FZF_DEFAULT_COMMAND='rg --files --hidden --follow'
 
 
 #####################################################################
@@ -96,7 +67,7 @@ export PASSWORD_STORE_ENABLE_EXTENSIONS=true
 #####################################################################
 # pnpm
 #####################################################################
-export PNPM_HOME="/home/mr-papi/.local/share/pnpm"
+export PNPM_HOME="$HOME/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;

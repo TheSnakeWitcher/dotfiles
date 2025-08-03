@@ -5,11 +5,11 @@
 #key_bindings: { key: Return,   mods: Control|Shift, action: SpawnNewInstance }
 
 [font]
-size = 9
+size = 13
 
 [font.normal] 
-family = "FiraCode Nerd Font"
-# family = "Hack"
+family = "Hack"
+# family = "FiraCode Nerd Font"
 # family: Monospace
 # family: Source Code Pro
 # family: Iosevka Term Nerd Font
@@ -17,7 +17,6 @@ family = "FiraCode Nerd Font"
 # family: Iosevka Nerd Font
 # family: Iosevka Term Nerd Font Mono
 # family: Iosevka Term Nerd
-
 
 
 # Doom One Colors 

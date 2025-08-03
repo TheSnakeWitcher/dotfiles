@@ -33,15 +33,11 @@
     ; chainreplyto = false
 [include]
      path = ./delta
-#[commit]
-#    template = path/to/commit-template
 [alias]
 	st = status
 	ci = commit
-	cim = commit -m
-	cia = commit --amend -m
+	co = checkout
 	logg = log --oneline --graph --decorate --all
-	; lg = log 	--format=format:"%H"
 	lg = log --oneline
 	log1 = log -1 --stat
 	log3 = log -3 --stat
@@ -50,27 +46,15 @@
 	lsd = ls-tree --format='%(objecttype) %(path)' -d
 	lsf = ls-tree --format='%(objecttype) %(path)' -r
 	lst = ls-tree --format='%(objecttype) %(path)' -r -t
-	co = checkout
-	ress = reset --soft
-	resm = reset --mixed
-	resh = reset --hard
 	df = diff
 	dfc = diff --cached
 	dfs = diff --compact-summary --ignore-all-space --ignore-blank-lines
 	dff = diff -G
 	dfo = diff --output
-	fp = format-patch
-	apply-commit = cherry-pick
-	rmc = rm --cached
 	br = branch
-	brt = branch -t
-	brr = branch -r
-	brm = branch -m
-	brd = branch -d
 	tx = send-email
 	rx = am
-	wt = worktree
-	subm = submodule
-	subt = subtree --squash --prefix
-	rp = request-pull
-	find = bisect
+[url "https://invent.kde.org/"]
+	insteadOf = kde:
+[url "ssh://git@invent.kde.org/"]
+	pushInsteadOf = kde:
