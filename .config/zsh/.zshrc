@@ -33,7 +33,7 @@ alias rm='rm -i'
 alias cat=bat
 alias lsblk='lsblk -fp'
 
-alias nv=nvim
+alias n=nvim
 alias g=git
 alias dots='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 alias ff=firefox
@@ -59,10 +59,6 @@ esac
 ###########################################
 # software config
 ###########################################
-# x graphic client
-#[[ -f ~/.zshrc ]] && ~/.zshrc
-#[[ $(fgconsole 2>/dev/null) == 1 ]] && exec startx -- vt1
-
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh --cmd j)"
 eval "$(direnv hook zsh)"
